@@ -1,0 +1,311 @@
+/* Fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-cyrillic_cyrillic-ext_latin-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-cyrillic_cyrillic-ext_latin-700.woff2")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v32-cyrillic_cyrillic-ext_latin-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v32-cyrillic_cyrillic-ext_latin-500.woff2")
+    format("woff2");
+}
+/* Colors of project  */
+:root {
+  --Color-brand-light: #2b7fff;
+  --Color-brand-dark: #011c44;
+  --Color-white: #ffffff;
+  --Color-black: #000000;
+  --Color-grey: #747272;
+  --Button-description: #4a4a4a;
+}
+
+/* Common styles */
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* Body */
+body {
+  color: var(--Color-brand-dark);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+  margin: 0;
+  background-color: whitesmoke;
+}
+address {
+  font-style: normal;
+}
+/* header section */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 56px;
+  justify-content: center;
+}
+/* Header-links */
+.header-links {
+  color: var(--Color-brand-dark);
+  text-decoration: none;
+}
+.header-links:hover {
+  color: var(--Color-brand-light);
+}
+
+/* Main section */
+.hero-section {
+  background-image: url("../Images/Hero-section-background-image.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 126.5px;
+}
+
+.main-section-container {
+  display: block;
+
+  max-width: 529px;
+}
+.company-field {
+  padding: 16px;
+}
+/* Hero title */
+.hero-title {
+  margin-bottom: 40px;
+  color: var(--Color-brand-light);
+  text-transform: capitalize;
+  font-family: "Play", sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+/* Button */
+.button-order {
+  padding: 16px 32px;
+  margin-bottom: 16px;
+  max-width: 219px;
+  background: var(--Color-brand-light);
+  border: 2px solid var(--Color-brand-light);
+  border-radius: 32px;
+
+  color: var(--Color-white);
+  font-weight: 600;
+  cursor: pointer;
+}
+.button-order:hover {
+  background-color: transparent;
+  color: var(--Color-brand-dark);
+}
+/* Button description */
+.button-description {
+  max-width: 219px;
+  color: var(--Button-description);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Titles of sections */
+.section-title {
+  font-family: "Play", sans-serif;
+  color: var(--Color-brand-dark);
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+/* Перевтілюйтесь в beauty zone!  section - ABOUT US */
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 176px;
+}
+.about-us-content {
+  max-width: 710px;
+}
+.about-us-title {
+  margin-bottom: 40px;
+  text-align: left;
+}
+.section-title .brand-name-accent-light {
+  color: var(--Color-brand-light);
+  text-transform: capitalize;
+}
+.about-us-text {
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 1.7;
+}
+.about-us-text .brand-name-accent-dark {
+  color: var(--Color-brand-dark);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+/* Чому люди обирають нас section */
+.our-advantages-container {
+  margin-bottom: 96px;
+  width: 100%;
+  max-width: 1108px;
+}
+.why-people-choose-us-title {
+  margin-bottom: 48px;
+}
+.section-title .accent {
+  color: var(--Color-brand-light);
+}
+.our-advantages {
+  display: flex;
+  gap: 56px;
+  justify-content: space-between;
+  color: var(--Color-black);
+  line-height: 1.3;
+}
+.advanteges-list {
+  box-shadow: 0px 4px 4px 0 #a8c6f561;
+  border: 1px solid black; /* remove */
+  border-radius: 32px;
+  /* max-width: 252px; */
+  height: 181px; /* значение по дизайну 133 */
+  padding: 24px 32px;
+}
+/* Наші процедури section */
+.Our-procedures-section {
+  margin-bottom: 96px;
+}
+.Our_procedures_list {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+
+  color: var(--Color-white);
+  font-size: 22px;
+}
+.procedures-title {
+  margin-bottom: 48px;
+}
+.procedures-card {
+  display: flex;
+  height: 456px;
+  width: 344px;
+  border: 1px solid var(--Color-black); /* remove */
+  border-radius: 4px 120px;
+  background-color: var(--Color-brand-dark);
+}
+.card-text {
+  padding: 372px 77px 32px 115px;
+  text-align: center;
+}
+
+/* Як нас знайти section */
+.our-location {
+  margin-bottom: 95px;
+}
+.our-location-content {
+  display: flex;
+  gap: 32px;
+}
+.submit-form {
+  max-width: 423px;
+  height: 481px;
+  background-image: url("../Images/submit-dorm-background.png");
+  background-color: var(--Color-brand-dark);
+  padding: 48px 57px;
+  border-radius: 32px;
+}
+.Contact_us {
+  max-width: 310px;
+  padding: 0px 18px 333px 18px;
+  margin-bottom: 0px;
+
+  color: var(--Color-white);
+  font-size: 22px;
+  font-weight: 600;
+}
+.contact-us-map {
+  border-radius: 32px;
+}
+.Contact_us .accent {
+  color: var(--Color-brand-light);
+}
+/* Footer */
+.footer {
+  background-image: url("../Images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--Color-brand-dark);
+}
+.footer-links {
+  color: var(--Color-white);
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer-links:hover {
+  color: var(--Color-brand-light);
+  font-weight: 600;
+}
+.footer-copyright {
+  color: var(--Color-grey);
+  font-size: 13px;
+}
